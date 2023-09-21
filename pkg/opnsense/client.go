@@ -3,6 +3,7 @@ package opnsense
 import (
 	"github.com/browningluke/opnsense-go/pkg/api"
 	"github.com/browningluke/opnsense-go/pkg/firewall"
+	"github.com/browningluke/opnsense-go/pkg/haproxy"
 	"github.com/browningluke/opnsense-go/pkg/interfaces"
 	"github.com/browningluke/opnsense-go/pkg/routes"
 	"github.com/browningluke/opnsense-go/pkg/unbound"
@@ -14,6 +15,7 @@ type Client interface {
 	Interfaces() *interfaces.Controller
 	Routes() *routes.Controller
 	Firewall() *firewall.Controller
+	Haproxy() *haproxy.Controller
 }
 
 type client struct {
@@ -39,4 +41,8 @@ func (c *client) Routes() *routes.Controller {
 
 func (c *client) Firewall() *firewall.Controller {
 	return &firewall.Controller{Api: c.a}
+}
+
+func (c *client) Haproxy() *haproxy.Controller {
+	return &haproxy.Controller{Api: c.a}
 }

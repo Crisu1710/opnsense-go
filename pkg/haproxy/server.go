@@ -32,7 +32,7 @@ type Server struct {
 	Number               string          `json:"number"`
 	Port                 string          `json:"port"`
 	ResolvePrefer        api.SelectedMap `json:"resolvePrefer"`
-	ResolverOpts         string          `json:"resolverOpts"`
+	ResolverOpts         api.SelectedMap `json:"resolverOpts"`
 	ServiceName          string          `json:"serviceName"`
 	Source               string          `json:"source"`
 	Ssl                  string          `json:"ssl"`
@@ -42,7 +42,7 @@ type Server struct {
 	SslSNI               string          `json:"sslSNI"`
 	SslVerify            string          `json:"sslVerify"`
 	Type                 api.SelectedMap `json:"type"`
-	UnixSocket           string          `json:"unix_socket"`
+	UnixSocket           api.SelectedMap `json:"unix_socket"`
 	Weight               string          `json:"weight"`
 }
 

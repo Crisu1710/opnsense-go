@@ -17,33 +17,33 @@ var ServerOpts = api.ReqOpts{
 // Data structs
 
 type Server struct {
-	Address              string          `json:"address"`
-	Advanced             string          `json:"advanced"`
-	CheckDownInterval    string          `json:"checkDownInterval"`
-	CheckInterval        string          `json:"checkInterval"`
-	Checkport            string          `json:"checkport"`
-	Description          string          `json:"description"`
-	Enabled              string          `json:"enabled"`
-	LinkedResolver       api.SelectedMap `json:"linkedResolver"`
-	MaxConnections       string          `json:"maxConnections"`
-	Mode                 api.SelectedMap `json:"mode"`
-	MultiplexerProtocol  api.SelectedMap `json:"multiplexer_protocol"`
-	Name                 string          `json:"name"`
-	Number               string          `json:"number"`
-	Port                 string          `json:"port"`
-	ResolvePrefer        api.SelectedMap `json:"resolvePrefer"`
-	ResolverOpts         api.SelectedMap `json:"resolverOpts"`
-	ServiceName          string          `json:"serviceName"`
-	Source               string          `json:"source"`
-	Ssl                  string          `json:"ssl"`
-	SslCA                api.SelectedMap `json:"sslCA"`
-	SslClientCertificate api.SelectedMap `json:"sslClientCertificate"`
-	SslCRL               api.SelectedMap `json:"sslCRL"`
-	SslSNI               string          `json:"sslSNI"`
-	SslVerify            string          `json:"sslVerify"`
-	Type                 api.SelectedMap `json:"type"`
-	UnixSocket           api.SelectedMap `json:"unix_socket"`
-	Weight               string          `json:"weight"`
+	Address              string              `json:"address"`
+	Advanced             string              `json:"advanced"`
+	CheckDownInterval    string              `json:"checkDownInterval"`
+	CheckInterval        string              `json:"checkInterval"`
+	Checkport            string              `json:"checkport"`
+	Description          string              `json:"description"`
+	Enabled              string              `json:"enabled"`
+	LinkedResolver       api.SelectedMap     `json:"linkedResolver"`
+	MaxConnections       string              `json:"maxConnections"`
+	Mode                 api.SelectedMap     `json:"mode"`
+	MultiplexerProtocol  api.SelectedMap     `json:"multiplexer_protocol"`
+	Name                 string              `json:"name"`
+	Number               string              `json:"number"`
+	Port                 string              `json:"port"`
+	ResolvePrefer        api.SelectedMap     `json:"resolvePrefer"`
+	ResolverOpts         api.SelectedMap     `json:"resolverOpts"`
+	ServiceName          string              `json:"serviceName"`
+	Source               string              `json:"source"`
+	Ssl                  string              `json:"ssl"`
+	SslCA                api.SelectedMapList `json:"sslCA"`
+	SslClientCertificate api.SelectedMap     `json:"sslClientCertificate"`
+	SslCRL               api.SelectedMap     `json:"sslCRL"`
+	SslSNI               string              `json:"sslSNI"`
+	SslVerify            string              `json:"sslVerify"`
+	Type                 api.SelectedMap     `json:"type"`
+	UnixSocket           api.SelectedMap     `json:"unix_socket"`
+	Weight               string              `json:"weight"`
 }
 
 // CRUD operations

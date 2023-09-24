@@ -18,7 +18,7 @@ var BackendOpts = api.ReqOpts{
 
 type Backend struct {
 	Algorithm                    api.SelectedMap     `json:"algorithm"`
-	BaAdvertisedProtocols        api.SelectedMap     `json:"ba_advertised_protocols"`
+	BaAdvertisedProtocols        api.SelectedMapList `json:"ba_advertised_protocols"`
 	BasicAuthEnabled             string              `json:"basicAuthEnabled"`
 	BasicAuthGroups              api.SelectedMapList `json:"basicAuthGroups"`
 	BasicAuthUsers               api.SelectedMapList `json:"basicAuthUsers"`

@@ -17,11 +17,11 @@ var FrontendOpts = api.ReqOpts{
 // Data structs
 
 type Frontend struct {
-	AdvertisedProtocols          api.SelectedMap     `json:"advertised_protocols"`
+	AdvertisedProtocols          api.SelectedMapList `json:"advertised_protocols"`
 	BasicAuthEnabled             string              `json:"basicAuthEnabled"`
 	BasicAuthGroups              api.SelectedMapList `json:"basicAuthGroups"`
 	BasicAuthUsers               api.SelectedMapList `json:"basicAuthUsers"`
-	Bind                         string              `json:"bind"`
+	Bind                         api.SelectedMapList `json:"bind"`
 	BindOptions                  string              `json:"bindOptions"`
 	ConnectionBehaviour          api.SelectedMap     `json:"connectionBehaviour"`
 	CustomOptions                string              `json:"customOptions"`
@@ -31,9 +31,9 @@ type Frontend struct {
 	ForwardFor                   string              `json:"forwardFor"`
 	Http2Enabled                 string              `json:"http2Enabled"`
 	Http2EnabledNontls           string              `json:"http2Enabled_nontls"`
-	LinkedActions                string              `json:"linkedActions"`
-	LinkedCpuAffinityRules       string              `json:"linkedCpuAffinityRules"`
-	LinkedErrorfiles             string              `json:"linkedErrorfiles"`
+	LinkedActions                api.SelectedMapList `json:"linkedActions"`
+	LinkedCpuAffinityRules       api.SelectedMapList `json:"linkedCpuAffinityRules"`
+	LinkedErrorfiles             api.SelectedMapList `json:"linkedErrorfiles"`
 	LoggingDetailedLog           string              `json:"logging_detailedLog"`
 	LoggingDontLogNormal         string              `json:"logging_dontLogNormal"`
 	LoggingDontLogNull           string              `json:"logging_dontLogNull"`

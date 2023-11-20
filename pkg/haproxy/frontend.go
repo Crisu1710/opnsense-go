@@ -45,11 +45,11 @@ type Frontend struct {
 	PrometheusPath               string              `json:"prometheus_path"`
 	SslAdvancedEnabled           string              `json:"ssl_advancedEnabled"`
 	SslBindOptions               api.SelectedMapList `json:"ssl_bindOptions"`
-	SslCertificates              api.SelectedMap     `json:"ssl_certificates"`
+	SslCertificates              api.SelectedMapList `json:"ssl_certificates"`
 	SslCipherList                string              `json:"ssl_cipherList"`
 	SslCipherSuites              string              `json:"ssl_cipherSuites"`
-	SslClientAuthCAs             api.SelectedMap     `json:"ssl_clientAuthCAs"`
-	SslClientAuthCRLs            api.SelectedMap     `json:"ssl_clientAuthCRLs"`
+	SslClientAuthCAs             api.SelectedMapList `json:"ssl_clientAuthCAs"`
+	SslClientAuthCRLs            api.SelectedMapList `json:"ssl_clientAuthCRLs"`
 	SslClientAuthEnabled         string              `json:"ssl_clientAuthEnabled"`
 	SslClientAuthVerify          api.SelectedMap     `json:"ssl_clientAuthVerify"`
 	SslCustomOptions             string              `json:"ssl_customOptions"`
